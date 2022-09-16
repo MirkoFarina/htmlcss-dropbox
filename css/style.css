@@ -145,6 +145,11 @@ main {
 section h3{
   font-size: 1.5rem;
 }
+
+.cell a, .partners a {
+  text-decoration: underline;
+  color: #182cef;
+}
 /* JUMBOTRON */
 .jumbotron {
   background-color: #b4d0e7;
@@ -216,7 +221,8 @@ section h3{
   border: 1px solid #d0d0d3;
 }
 
-.row .cell .head-cell, .orizontal-cell .head-cell {
+.row .cell .head-cell, 
+.orizontal-cell .head-cell {
   height: 40px;
   border-bottom: 1px solid #d0d0d3;
   margin-bottom: 40px;
@@ -256,10 +262,7 @@ li:last-child {
   text-decoration: none;
 }
 
-.cell a{
-  text-decoration: underline;
-  color: #182cef;
-}
+
 
 .middle-cell span{
   padding-bottom: 30px;
@@ -364,7 +367,80 @@ li:last-child {
 /* /THIRD SECTION */
 
 /* FOURTH SECTION */
+.partners .container2{
+  padding-right: 350px;
+}
 
+.partners .container2 a{
+  display: inline-block;
+  margin-bottom: 150px;
+}
+
+.partners {
+  margin-bottom: 200px;
+}
+
+.partners .sponsor{
+  height: 600px;
+}
+.column{
+  width: calc(100% / 3);
+  flex-wrap: wrap;
+}
+
+.square{
+  width: calc(100% / 2);
+  justify-content: center;
+  align-items: center;
+  height: calc(100% / 2);
+}
+
+.description{
+  padding: 20px 40px;
+  background-color: #f5f5f5;
+}
+.description img {
+  width: 250px;
+  margin-bottom: 60px;
+}
+.description hr{
+  width: 120px;
+}
+
+.description  p{
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.square img{
+  filter: invert(1);
+  width: 150px;
+  min-width: 150px;
+}
+
+.square.designit{
+  background-color: #a2d39b;
+}
+.square.arizona{
+  background-color: #61082b;
+}
+.square.florida{
+  background-color: #0093ce;
+}
+.square.topps{
+  background-color: #ff1c1c;
+}
+.square.bicycle{
+  background-color: #d5001f;
+}
+.square.hearts{
+  background-color: #b4d0e7;
+}
+.square.lonely{
+  background-color: #0d2481;
+}
+.square.channel{
+  background-color: #ffd830;
+}
 /* /FOURTH SECTION */
 
 /* /MAIN */
