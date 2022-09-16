@@ -17,6 +17,16 @@ a{
   text-decoration: none;
   color: #1e1919;
 }
+
+h2{
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+}
+
+p{
+  line-height: 25px;
+}
+
 /* UTILITY */
 .container1 {
   width: 90%;
@@ -166,7 +176,6 @@ section h3{
 
 .jumbotron .text p {
   padding-bottom: 40px;
-  line-height: 22px;
 }
 
 .jumbotron .text .bg-blu{
@@ -185,11 +194,6 @@ section h3{
 /* /JUMBOTRON */
 
 /* FIRST SECTION */
-.buisness-plain h2{
-  font-size: 2.5rem;
-  margin-bottom: 70px;
-}
-
 .buisness-plain .radio-box{
   margin-bottom: 50px;
 }
@@ -307,6 +311,10 @@ li:last-child {
 /* /FIRST SECTION */
 
 /* SECOND SECTION */
+.search-partner {
+  margin-bottom: 150px;
+}
+
 .search-partner .img-left {
   width: 60%;
 }
@@ -321,7 +329,6 @@ li:last-child {
 }
 
 .search-partner .text-search-partner p {
-  line-height: 25px;
   padding-bottom: 40px;
   font-size: 1.1rem;
 }
@@ -335,6 +342,30 @@ li:last-child {
   font-weight: bold;
 }
 /* /SECOND SECTION */
+
+/* THIRD SECTION */
+.dropbox-buisness{
+  margin-bottom: 170px;
+}
+
+.dropbox-buisness .row {
+  flex-wrap: wrap;
+}
+
+.dropbox-buisness .card{
+  width: calc(100% / 3);
+  padding: 0 15px;
+  padding-bottom: 80px;
+}
+
+.dropbox-buisness .card .bottom h3{
+  padding-bottom: 40px;
+}
+/* /THIRD SECTION */
+
+/* FOURTH SECTION */
+
+/* /FOURTH SECTION */
 
 /* /MAIN */
 
