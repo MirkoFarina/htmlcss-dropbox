@@ -132,6 +132,10 @@ main {
   margin-top: 80px;
 }
 
+section h3{
+  font-size: 1.5rem;
+}
+/* JUMBOTRON */
 .jumbotron {
   background-color: #b4d0e7;
   padding-top: 70px;
@@ -178,7 +182,9 @@ main {
   font-size: 2.5rem;
   padding-bottom: 20px;
 }
+/* /JUMBOTRON */
 
+/* FIRST SECTION */
 .buisness-plain h2{
   font-size: 2.5rem;
   margin-bottom: 70px;
@@ -217,10 +223,6 @@ main {
 .row .cell .middle-cell{
   margin-bottom: 60px;
   padding: 0 40px;
-}
-
-.row .cell h3, .row-enterprise .orizontal-cell h3{
-  font-size: 1.5rem;
 }
 
 .cell .middle-cell ul:first-of-type
@@ -302,6 +304,38 @@ li:last-child {
 .main-cell .text-left p:last-of-type{
   padding-bottom: 30px;
 }
+/* /FIRST SECTION */
+
+/* SECOND SECTION */
+.search-partner .img-left {
+  width: 60%;
+}
+
+.search-partner .text-search-partner{
+  width: 40%;
+  padding: 50px 0  0 45px;
+}
+
+.search-partner .text-search-partner h3{
+  padding-bottom: 20px;
+}
+
+.search-partner .text-search-partner p {
+  line-height: 25px;
+  padding-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.search-partner .text-search-partner a{
+  border: 1px solid black;
+}
+
+.search-partner .text-search-partner a:hover{
+  border: 2px solid black;
+  font-weight: bold;
+}
+/* /SECOND SECTION */
+
 /* /MAIN */
 
 /* FOOTER */
