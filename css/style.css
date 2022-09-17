@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html{
+  Scroll-behavior: smooth;
+  Scroll-padding-top: 80px;
+ }
+
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -60,7 +65,7 @@ p{
   color: white;
 }
 
-.btn.bg-blu:hover {
+.bg-blu:hover {
   background-color: #0090fe;
 }
 
@@ -121,7 +126,7 @@ header ul li {
 }
 
 header ul li:hover{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 
 header .left  li {
@@ -262,11 +267,14 @@ li:last-child {
   text-decoration: none;
 }
 
-
+.middle-cell hr{
+  width: 50px;
+  opacity: 0.5;
+  margin-top: 30px;
+}
 
 .middle-cell span{
   padding-bottom: 30px;
-  border-bottom: 1px solid #d0d0d3;
 }
 
 .row .footer-cell{
@@ -367,11 +375,11 @@ li:last-child {
 /* /THIRD SECTION */
 
 /* FOURTH SECTION */
-.partners .container2{
+.partners .customers{
   padding-right: 350px;
 }
 
-.partners .container2 a{
+.partners .customers a{
   display: inline-block;
   margin-bottom: 150px;
 }
@@ -380,19 +388,20 @@ li:last-child {
   margin-bottom: 200px;
 }
 
-.partners .sponsor{
-  height: 600px;
+.partners .column.scroll{
+  overflow: auto;
 }
+
 .column{
   width: calc(100% / 3);
   flex-wrap: wrap;
 }
 
 .square{
-  width: calc(100% / 2);
+  width: 50%;
   justify-content: center;
   align-items: center;
-  height: calc(100% / 2);
+  aspect-ratio: 1/1;
 }
 
 .description{
@@ -404,7 +413,8 @@ li:last-child {
   margin-bottom: 60px;
 }
 .description hr{
-  width: 120px;
+  width: 100px;
+  opacity: 0.5;
 }
 
 .description  p{
@@ -414,7 +424,6 @@ li:last-child {
 .square img{
   filter: invert(1);
   width: 150px;
-  min-width: 150px;
 }
 
 .square.designit{
@@ -441,9 +450,137 @@ li:last-child {
 .square.channel{
   background-color: #ffd830;
 }
+
+.partners .nella-tua-azienda{
+  background-color: #b4d0e7;
+  padding: 150px 0;
+}
+
+.partners .nella-tua-azienda .text{
+  width: 60%;
+}
+.partners .nella-tua-azienda .button-left{
+  width: 40%;
+  text-align: end;
+}
+
+.partners .nella-tua-azienda h3{
+  color: #61082b;
+  font-size: 2.8rem;
+}
+
+.partners .nella-tua-azienda a{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.partners .nella-tua-azienda .content-element{
+  justify-content: center;
+  align-items: center;
+}
 /* /FOURTH SECTION */
+
+/* FIFTH SECTION */
+.request{
+  margin-bottom: 150px;
+}
+
+.request:last-child{
+  border-bottom: 1px solid black;
+}
+
+.question{
+ border-top: 1px solid black;
+ padding: 40px 0;
+ position: relative;
+}
+
+.question h4{
+  font-size: 1.1rem;
+}
+
+.question i{
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  font-weight: bold;
+}
+
+.fa-chevron-up{
+  display: none;
+}
+
+.question:hover .fa-chevron-down{
+  display: none;
+}
+
+.question:hover .fa-chevron-up{
+  display: block;
+}
+
+.question p{
+  display: none;
+}
+
+.question:hover p{
+  display: inline-block;
+  padding-top: 30px;
+}
+/* /FIFTH SECTION */
 
 /* /MAIN */
 
 /* FOOTER */
+footer{
+  background-color: black;
+  color: white;
+}
+
+footer .container1{
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.row-footer{
+  margin-bottom: 100px;
+}
+
+.column-footer{
+  width: calc(100% / 5);
+}
+
+.column-footer h5{
+  font-size: 1.5rem;
+}
+
+.column-footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.column-footer a:hover{
+  text-decoration: underline;
+}
+
+.column-footer ul{
+  list-style: none;
+}
+
+.column-footer li{
+  padding-top: 20px;
+}
+
+footer hr{
+  width: 130px;
+  margin-bottom: 50px;
+}
+
+.bottom-footer{
+  opacity: 0.5;
+}
+
+.fa-earth-americas{
+  padding-right: 5px;
+}
 /* /FOOTER */
