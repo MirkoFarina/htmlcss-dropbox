@@ -69,10 +69,6 @@ p{
   background-color: #0090fe;
 }
 
-.btn.small.border{
-  border: 1px solid black;
-}
-
 .user::marker{
   content: '\f007';
   font-family: FontAwesome;
@@ -161,7 +157,10 @@ section h3{
   padding-top: 70px;
   margin-bottom: 160px;
 }
-  
+
+.jumbotron .container1{
+  position: relative;
+}
 
 .jumbotron h1{
   height: 180px;
@@ -206,9 +205,10 @@ section h3{
 /* FIRST SECTION */
 .buisness-plain .radio-box{
   margin-bottom: 50px;
+  display: inline-block;
 }
 
-.buisness-plain .radio-box span{
+.buisness-plain .radio-box label{
   padding-right: 30px;
 }
 
@@ -217,7 +217,7 @@ section h3{
   margin-bottom: 50px;
 }
 
-.row .cell{
+.buisness-plain .row .cell{
   width: calc(100% / 3 - 10px);
 }
 
@@ -260,7 +260,7 @@ li:last-child {
   padding-left: 5px;
 }
 
-.cell .btn, .orizontal-cell .btn{
+.row .cell .btn, .orizontal-cell .btn{
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
@@ -277,7 +277,7 @@ li:last-child {
   padding-bottom: 30px;
 }
 
-.row .footer-cell{
+.row .cell .footer-cell{
   padding: 0 40px;
 }
 
@@ -292,12 +292,13 @@ li:last-child {
   margin-bottom: 150px;
 }
 
-.orizontal-cell .main-cell{
+.buisness-plain .orizontal-cell .main-cell{
   justify-content: space-between;
   padding: 0 40px;
 }
 
-.orizontal-cell .main-cell .button-right{
+buisness-plain .orizontal-cell 
+.main-cell .button-right{
   padding-left: 20px;
   width: 30%;
   text-align: right;
@@ -363,7 +364,7 @@ li:last-child {
   flex-wrap: wrap;
 }
 
-.dropbox-buisness .card{
+.dropbox-buisness .row .card{
   width: calc(100% / 3);
   padding: 0 15px;
   padding-bottom: 80px;
@@ -388,39 +389,23 @@ li:last-child {
   margin-bottom: 200px;
 }
 
-.partners .column.scroll{
-  overflow: auto;
-}
-
-.column{
-  width: calc(100% / 3);
+.partners .column{
+  width: calc(100vw / 3);
   flex-wrap: wrap;
 }
 
-.square{
+.partners .column.scroll{
+  overflow: auto;
+  aspect-ratio: 1/1;
+}
+
+.column .square{
   width: 50%;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1/1;
 }
 
-.description{
-  padding: 20px 40px;
-  background-color: #f5f5f5;
-}
-.description img {
-  width: 250px;
-  margin-bottom: 60px;
-}
-.description hr{
-  width: 100px;
-  opacity: 0.5;
-}
-
-.description  p{
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
 .square img{
   filter: invert(1);
   width: 150px;
@@ -451,17 +436,36 @@ li:last-child {
   background-color: #ffd830;
 }
 
+.description{
+  padding: 20px 40px;
+  background-color: #f5f5f5;
+}
+.description img {
+  width: 250px;
+  margin-bottom: 60px;
+}
+.description hr{
+  width: 100px;
+  opacity: 0.5;
+}
+
+.description  p{
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
 .partners .nella-tua-azienda{
   background-color: #b4d0e7;
   padding: 150px 0;
 }
 
+.partners .nella-tua-azienda .content-element{
+  justify-content: center;
+  align-items: center;
+}
+
 .partners .nella-tua-azienda .text{
   width: 60%;
-}
-.partners .nella-tua-azienda .button-left{
-  width: 40%;
-  text-align: end;
 }
 
 .partners .nella-tua-azienda h3{
@@ -469,15 +473,15 @@ li:last-child {
   font-size: 2.8rem;
 }
 
+.partners .nella-tua-azienda .button-right{
+  width: 40%;
+  text-align: end;
+}
+
 .partners .nella-tua-azienda a{
   background-color: white;
   text-decoration: none;
   color: black;
-}
-
-.partners .nella-tua-azienda .content-element{
-  justify-content: center;
-  align-items: center;
 }
 /* /FOURTH SECTION */
 
@@ -490,7 +494,7 @@ li:last-child {
   border-bottom: 1px solid black;
 }
 
-.question{
+.request .question{
  border-top: 1px solid black;
  padding: 40px 0;
  position: relative;
@@ -507,7 +511,7 @@ li:last-child {
   font-weight: bold;
 }
 
-.fa-chevron-up{
+.question .fa-chevron-up{
   display: none;
 }
 
@@ -542,6 +546,19 @@ footer .container1{
   padding-bottom: 60px;
 }
 
+footer a{
+  color: white;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+footer hr{
+  width: 130px;
+  margin-bottom: 50px;
+}
+
 .row-footer{
   margin-bottom: 100px;
 }
@@ -554,26 +571,13 @@ footer .container1{
   font-size: 1.5rem;
 }
 
-.column-footer a{
-  text-decoration: none;
-  color: white;
-}
-
-.column-footer a:hover{
-  text-decoration: underline;
-}
-
 .column-footer ul{
   list-style: none;
+  padding-top: 20px;
 }
 
 .column-footer li{
   padding-top: 20px;
-}
-
-footer hr{
-  width: 130px;
-  margin-bottom: 50px;
 }
 
 .bottom-footer{
