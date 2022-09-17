@@ -454,6 +454,10 @@ buisness-plain .orizontal-cell
   padding-bottom: 40px;
 }
 
+.active{
+  box-shadow: 0px 0px 0px 15px rgba(255,255,255,0.4) inset;
+}
+
 .partners .nella-tua-azienda{
   background-color: #b4d0e7;
   padding: 150px 0;
