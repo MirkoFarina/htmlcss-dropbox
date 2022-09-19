@@ -203,6 +203,10 @@ section h3{
 /* /JUMBOTRON */
 
 /* FIRST SECTION */
+.buisness-plain{
+  padding: 0 15px;
+}
+
 .buisness-plain .radio-box{
   margin-bottom: 50px;
   display: inline-block;
@@ -325,6 +329,7 @@ buisness-plain .orizontal-cell
 /* SECOND SECTION */
 .search-partner {
   margin-bottom: 150px;
+  padding: 0 15px;
 }
 
 .search-partner .img-left {
@@ -360,6 +365,10 @@ buisness-plain .orizontal-cell
   margin-bottom: 170px;
 }
 
+.dropbox-buisness h2{
+  padding: 0 15px;
+}
+
 .dropbox-buisness .row {
   flex-wrap: wrap;
 }
@@ -378,6 +387,7 @@ buisness-plain .orizontal-cell
 /* FOURTH SECTION */
 .partners .customers{
   padding-right: 350px;
+  padding-left: 15px;
 }
 
 .partners .customers a{
@@ -466,6 +476,7 @@ buisness-plain .orizontal-cell
 .partners .nella-tua-azienda .content-element{
   justify-content: center;
   align-items: center;
+  padding: 0 15px;
 }
 
 .partners .nella-tua-azienda .text{
@@ -492,9 +503,10 @@ buisness-plain .orizontal-cell
 /* FIFTH SECTION */
 .request{
   margin-bottom: 150px;
+  padding: 0 15px;
 }
 
-.request:last-child{
+.request .question:last-child{
   border-bottom: 1px solid black;
 }
 
